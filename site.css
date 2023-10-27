@@ -1,0 +1,104 @@
+body {
+    background-color: antiquewhite;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 5px 5px 5px 0;
+}
+
+.container .reveal, 
+.container .first {
+    background-color: black;
+    box-shadow: 0 8px 54px rgba(14, 12, 12, 0.72);
+    border-radius: 2rem;
+    color: white;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+
+/* klasy do chowania/pokazywania */
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+
+.reveal.active {
+    opacity: 1;
+    animation: fade-in-left 1s ease-in;
+}
+
+.reveal.disactivate {
+    animation: fade-out-left 1s ease-in;
+}
+
+/* animacja pokazywania */
+@keyframes fade-in-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* animacja chowania */
+@keyframes fade-out-left {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+.modal-content {
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    padding: 15px;
+}
+
+
+/* podkreslnik na linkach i gatunkach */
+.underline {
+    display: inline-block;
+    position: relative;  
+    cursor: pointer;
+}
+
+h3.underline {
+    cursor: default;
+}
+
+li.underline {
+    display: list-item;
+}
+
+/* linia */
+.underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+/* linia na najezdzeniu myszka */
+.underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  

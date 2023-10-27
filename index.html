@@ -1,1 +1,210 @@
-test natan
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="antiquewhite" />
+    <title>Gatunki muzyki</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="site.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="text-center p-5">
+        <h1>Gatunki muzyki</h1>
+    </header>
+    <div class="container">
+        <div class="first">
+            <h3 class="underline">Rock</h3>
+            <p>
+                Gatunek muzyki rozrywkowej powstały w połowie XX wieku w Stanach Zjednoczonych (który wytworzył wokół
+                siebie krąg subkultury młodzieżowej) i ogólna nazwa szeregu stylów muzycznych, wywodzących się z rock
+                and rolla oraz rhythm and bluesa i bluesa. Sama nazwa „rock” jest skrótem od „rock and roll”, choć można
+                uznawać owe dwa pojęcia za odmienne od siebie gatunki muzyczne.
+            </p>
+            <h5>Przykładowe zespoły</h5>
+            <ul>
+                <li>Arctic Monkeys</li>
+                <li>The Neighbourhood</li>
+                <li>Lovejoy</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rockModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Pop</h3>
+            <p>
+                W węższym zakresie popem nazywa się bardziej „miękki” i nastawiony na masowego odbiorcę odłam muzyki
+                rockowej, charakteryzujący się prostotą, melodyjnością i szerszym niż w klasycznej muzyce rockowej
+                użyciem syntezatorów i studyjnych technik nagraniowych.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Britney Spears</li>
+                <li>Lady Gaga</li>
+                <li>Harry Styles</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='popModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Hip-Hop</h3>
+            <p>
+                Gatunek jest oparty na rapowaniu oraz muzyce disco, soul i funk. Na gatunek muzyczny hip-hopu składają
+                się: rytmizowany styl muzyki o stałym tempie oraz rapowaniu, czyli rytmicznym wypowiadaniu tekstu. Styl
+                muzyczny hip-hop jest jednym z filarów kultury hip-hopowej.
+
+                Muzyka hip-hop powstała, gdy DJ-e zaczęli tworzyć bity za pomocą zapętlania zapisów partii solowych,
+                granych oryginalnie na perkusji na dwóch gramofonach, robiąc tak zwany sampling. Do zapętlanych
+                fragmentów po jakimś czasie doszło rapowanie.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Kendrick Lamar</li>
+                <li>Fergie</li>
+                <li>Tyler, The Creator</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rapModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Phonk</h3>
+            <p>
+                Podgatunek muzyki hip-hopowej i trapowej inspirowany bezpośrednio Memphis rapem z lat 90. Gatunek ten można zaobserwować głównie na platformie SoundCloud, charakteryzuje się nostalgicznymi funkowymi samplami, którym często towarzyszą wokale ze starych rapowych taśm Memphis rapu. Gatunek zazwyczaj pobiera poszczególne dźwięki hip-hopowe z początku lat 90., łącząc je z dźwiękami jazzu i wykorzystuje zniekształcające techniki (takie jak chopped and screwed), aby stworzyć mroczniejszy dźwięk.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Hensonn</li>
+                <li>KSLV Noh</li>
+                <li>Kordhell</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='phonkModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Muzyka elektroniczna</h3>
+            <p>
+                Muzyka tworzona głównie lub wyłącznie za pomocą elektrofonów (elektromechanicznych i elektronicznych instrumentów muzycznych) oraz urządzeń elektronicznych przetwarzających dźwięki pozamuzyczne lub generowane przez tradycyjne instrumenty akustyczne. Zaniechana nazwa to muzyka elektronowa.
+
+                Pierwszy raz termin „muzyka elektroniczna” pojawił się w 1951 w znaczeniu programowym w deklaracji grupy muzyków skupionych wokół kolońskiego studio WDR jako Elektronische Musik.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Flume</li>
+                <li>Gesaffelstein</li>
+                <li>Skrillex</li>
+            </ul>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">House</h3>
+            <p>
+                Gatunek wywodzi się głównie z muzyki disco lat 70. oraz w mniejszym stopniu euro disco, italo disco, electro, soul, dub, synth pop, rap, jazz, groove i muzyce funk. Określenie tej odmiany muzyki pochodzi od nazwy klubu Warehouse. Do powstania tego gatunku przyczyniło się też stosowanie w muzyce lat 70. XX wieku techniki samplingu.
+
+                Muzyka house charakteryzuje się tanecznym rytmem, śpiewanymi wstawkami i linią melodyczną opartą na brzmieniu instrumentarium muzyki poważnej, np. skrzypiec, fortepianu, gitary. Wśród remiksów istnieją wersje „dub”, które charakteryzują się wysuniętą na pierwszy plan linią basową
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Lucky Luke</li>
+                <li>Dillistone</li>
+                <li>Dual Manner</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='houseModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Jazz</h3>
+            <p>
+                Gatunek muzyczny, który powstał na przełomie XIX i XX wieku (zapoczątkowany pomiędzy 1890, a 1900 rokiem) na południu Stanów Zjednoczonych w Nowym Orleanie jako połączenie muzyki zachodnioafrykańskiej i europejsko-amerykańskiej (bluesa, ragtime’u i muzyki europejskiej). Stanowi on połączenie muzyki ludowej, artystycznej i rozrywkowej.
+
+                Jazz charakteryzuje się rytmem synkopowanym w metrum parzystym, a także dużą dowolnością interpretacyjną i aranżacyjną oraz tendencją do improwizacji. Ma to związek z faktem, że pierwszymi twórcami tego gatunku byli przeważnie nieznający nut potomkowie niewolników.
+                
+                Według niektórych muzykologów jazz jest raczej formą interpretacji niż stylem muzycznym.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Bill Evans</li>
+                <li>Bobby Caldwell</li>
+                <li>Miles Davis</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='jazzModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">R&B</h3>
+            <p>
+                Gatunek muzyki rozrywkowej wywodzący się z jazzu, bluesa i pieśni religijnych. Był jednym z najważniejszych protoplastów rock and rolla, a później nowoczesnego soulu.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>The Weeknd</li>
+                <li>Steve Lacy</li>
+                <li>Estelle</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='rnbModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="reveal">
+            <h3 class="underline">Indie</h3>
+            <p>
+                Muzyka produkowana niezależnie od komercyjnych wytwórni płytowych oraz proces, który może obejmować samodzielne podejście do nagrywania i publikowania. Głównym celem tego typu muzyki jest dostarczanie odbiorcom walorów estetycznych i przekazywanie głębszych treści w tekstach. Piosenki zaliczane do tego gatunku nie są tworzone z myślą o wielkim sukcesie komercyjnym.
+
+                Termin indie jest czasem używany do opisu gatunku (takiego jak indie rock i indie pop), a jako termin gatunkowy, „indie” może obejmować też muzykę, która nie jest produkowana niezależnie.
+            </p>
+            <h5>Przykładowi artyści</h5>
+            <ul>
+                <li>Mitski</li>
+                <li>Mac DeMarco</li>
+                <li>Sufjan Stevens</li>
+            </ul>
+
+            <div class="d-flex justify-content-center">
+                <button id='indieModal' type="button" class="modalBtn btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#popupModal">Więcej</button>
+            </div>
+        </div>
+
+        <div class="modal fade" id="popupModal" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-body" id="modal-text"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer fixed-bottom text-end">Wykonanie: Nikola Wojtyła</footer>
+</body>
+
+</html>
